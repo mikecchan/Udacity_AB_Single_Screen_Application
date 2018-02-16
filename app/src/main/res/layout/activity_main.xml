@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="s.com.single_screen_application.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NEW CHINA RESTAURANT"
+        android:textAllCaps="true"
+        android:textAlignment="center"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:id="@+id/title"
+        android:paddingTop="25px"
+        android:paddingBottom="25px"
+        />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxHeight="300px"
+        android:layout_centerInParent="true"
+        android:adjustViewBounds="true"
+        android:layout_below="@id/title"
+        android:src="@drawable/sign_front"
+        android:paddingTop="25px"
+        android:paddingBottom="25px"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:id="@+id/Info"
+        android:layout_below="@id/imageView"
+        android:paddingTop="25px"
+        android:textSize="18sp"
+        android:text="2805 West Maple Rd, Troy, MI, 48084 \nNewChinaTroy@gmail.com \n(248)-495-0485 \n\n'Our Family's Chinese Restaurant since 1974'"
+        android:minLines="6"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Hours"
+        android:layout_below="@id/Info"
+        android:paddingTop="25px"
+        android:text="HOURS\nMonday to Friday - 11AM to 10:30PM \nSaturday - 12PM to 11PM \nSunday - 1PM to 10PM"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:minLines="4"/>
+
+
+</RelativeLayout>
+
