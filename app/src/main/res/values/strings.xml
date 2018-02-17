@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Single_Screen_Application</string>
+    <string name="title">NEW CHINA RESTAURANT</string>
+    <string name="description">"Our Family's Chinese Restaurant since 1974"</string>
+    <string name="phone">(248)-495-0485</string>
+    <string name="email">NewChinaTroy@gmail.com</string>
+    <string name="address">2805 West Maple Rd, Troy, MI, 48084</string>
+    <string name="hours">HOURS\nMonday to Friday - 11AM to 10:30PM \nSaturday - 12PM to 11PM \nSunday - 1PM to 10PM</string>
 </resources>

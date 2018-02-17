@@ -1,59 +1,93 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="s.com.single_screen_application.MainActivity">
 
+    <Space
+        android:layout_width="1dp"
+        android:layout_height="25dp" />
+
     <TextView
+        android:id="@+id/title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="NEW CHINA RESTAURANT"
-        android:textAllCaps="true"
-        android:textAlignment="center"
-        android:textSize="28sp"
-        android:textStyle="bold"
         android:layout_alignParentTop="true"
-        android:id="@+id/title"
-        android:paddingTop="25px"
-        android:paddingBottom="25px"
-        />
+        android:text="@string/title"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <Space
+        android:layout_width="1dp"
+        android:layout_height="25dp" />
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:maxHeight="300px"
         android:layout_centerInParent="true"
         android:adjustViewBounds="true"
-        android:layout_below="@id/title"
-        android:src="@drawable/sign_front"
-        android:paddingTop="25px"
-        android:paddingBottom="25px"/>
+        android:maxHeight="300dp"
+        android:src="@drawable/sign_front" />
+
+    <Space
+        android:layout_width="1dp"
+        android:layout_height="25dp" />
 
     <TextView
+        android:id="@+id/Description"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:text="@string/description"
         android:textAlignment="center"
-        android:id="@+id/Info"
-        android:layout_below="@id/imageView"
-        android:paddingTop="25px"
-        android:textSize="18sp"
-        android:text="2805 West Maple Rd, Troy, MI, 48084 \nNewChinaTroy@gmail.com \n(248)-495-0485 \n\n'Our Family's Chinese Restaurant since 1974'"
-        android:minLines="6"/>
+        android:textSize="18sp" />
+
+    <Space
+        android:layout_width="1dp"
+        android:layout_height="10dp" />
 
     <TextView
+        android:id="@+id/Phone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:autoLink="phone"
+        android:text="@string/phone"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/Email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autoLink="email"
+        android:text="@string/email"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/Map"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autoLink="map"
+        android:text="@string/address"
+        android:textAlignment="center" />
+
+    <Space
+        android:layout_width="1dp"
+        android:layout_height="25dp" />
+
+    <TextView
         android:id="@+id/Hours"
-        android:layout_below="@id/Info"
-        android:paddingTop="25px"
-        android:text="HOURS\nMonday to Friday - 11AM to 10:30PM \nSaturday - 12PM to 11PM \nSunday - 1PM to 10PM"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minLines="4"
+        android:text="@string/hours"
         android:textAlignment="center"
-        android:textSize="18sp"
-        android:minLines="4"/>
+        android:textSize="18sp" />
 
 
-</RelativeLayout>
+</LinearLayout>
 
